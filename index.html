@@ -23,6 +23,46 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <style>
     @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+    table.type07 {
+      width: 750px;
+      border-collapse: collapse;
+      text-align: left;
+      line-height: 1.5;
+      border: 1px solid #ccc;
+      font-size: 17px;
+      color: #000;
+      margin-top: 10px;
+    }
+    table.type07 thead {
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      background: #e7849d;
+    }
+    table.type07 thead th {
+      padding: 10px;
+      font-weight: bold;
+      vertical-align: top;
+      color: #fff;
+      text-align: center;
+      font-size: 19px;
+    }
+    table.type07 tbody th {
+      width: 100px;
+      padding: 10px;
+      font-weight: bold;
+      vertical-align: top;
+      border-bottom: 1px solid #ccc;
+      background: #fcf1f4;
+      text-align: center;
+    }
+    table.type07 td {
+      width: 350px;
+      padding: 10px;
+      vertical-align: top;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+    }
   </style>
 
 </head>
@@ -112,7 +152,7 @@
         <!-- 메인헤더 -->
         <h2 class="text-center" style="font-size: 50px;">Projects</h2>
 
-        <!-- Project 01 : 이름 -->
+        <!-- Project 01 : Deligt 시작 -->
         <hr>
         <div style="text-align: center;">
           <div style="color: #000; font-weight: 700; font-size: 50px;">Deligt</div>
@@ -127,65 +167,229 @@
             <img src="image/delight05.png" style="height: 450px; width: 600px;"/>
           </div>
 
-          <div style="
-              background-color: rgb(252, 252, 252);
-              border-radius: 10px;
-              margin: 0 auto; 
-              width: 750px; 
-              border: solid 1px rgb(223, 223, 223);
-              padding: 10px; 
-              font-size: 16px; 
-              color: rgb(36, 36, 36); 
-              margin-top: 10px;
-          ">
-            <!-- 간략히 프로젝트 및 감상 소개 -->
-            <div style="font-size: 18px; font-weight: 500; color:rgb(82, 82, 82); padding: 10px 60px 10px 60px;">
-              지인이 자신의 헤어샵의 사이트를 갖고 싶다는 부탁으로 제작하게 된 사이트입니다.<br><br>
-              미용실의 이벤트 및 일정 전달과 회원 간의 의사소통을 위한 게시판과 댓글란을 구현하였습니다.
-            </div>
+            <table class="type07">
+              <thead>
+              <tr>
+                <th scope="cols" colspan="2">프로젝트 상세설명</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">프로젝트 소개</th>
+                <td>
+                  처음에는 지인이 자신의 헤어샵의 사이트를 갖고 싶다는 부탁으로 학원 수료 후 가볍게 제작하게 된 사이트입니다. <br><br>
+                  기본적인 <b>게시글과 댓글의 CRUD</b>와 API 삽입의 공부 삼아 제작하게 되었지만 프로젝트에 애정이 생겨서 <b>Interceptor와 정규표현식</b>을 사용하여 치환에 힘을 주게 되었습니다. <br><br>
+                  또한 실제로 <b>docker를 이용하여 클라우드 서버를 연결하여 배포</b>도 성공적으로 완료하게 되어 마음이 가는 첫 개인 프로젝트입니다. 
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">도메인</th>
+                <td><a href="https://www.delighss.shop/">https://www.delighss.shop/</a></td>
+              </tr>
+              <tr>
+                <th scope="row">시연 촬영 영상</th>
+                <td><a href="https://youtu.be/S-feoKs5or4">https://youtu.be/S-feoKs5or4</a></td>
+              </tr>
+              <tr>
+                <th scope="row">주요기능</th>
+                <td>
+                  ◽ 게시글 댓글 CRUD 및 페이징과 검색<br>
+                  ◽ 로그인 로그아웃<br>
+                  ◽ 카카오지도<br>
+                  ◽ 마이페이지
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">개발환경</th>
+                <td>
+                  ◽ OS : Windows 10<br>
+                  ◽ Tool : Spring Tool Suite - Eclipse<br>
+                  ◽ DB : Oracle<br>
+                  ◽ Server : Apache Tomcat 8.5 <br>
+                  ◽ Language : JAVA / ANSI SQL / JAVASCRIPT / JSP<br>
+                  ◽ Distribute : docker image / Oracle Cloud
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">사용툴</th>
+                <td>
+                  ◽ Github : <a href="https://github.com/BaeSeokJin/delight">https://github.com/BaeSeokJin/delight</a><br>
+                  ◽ Oven(초기UI설계) / ERD Cloud(BD설계) / Trello(협업 일정 관리) 
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">구현기능</th>
+                <td>
+                  <div>
+                    <div><img src="image/delight06.JPG" style="width: 170px; height: 200px; float: left;" data-action="zoom"></div>
+                    <div style="float:left; width: 410px; height: 200px; margin-left: 5px;">
+                      글ddddd
+                    </div>
+                  </div>
+                  <div style="color: #ccc;">──────────────────────────────────────</div>
+                  <div>
+                    <div><img src="image/delight07.JPG" style="width: 170px; height: 200px; float: left;" data-action="zoom"></div>
+                    <div style="float:left; width: 410px; height: 200px; margin-left: 5px;">
+                      글ddddd
+                    </div>
+                  </div>
+                  <div style="color: #ccc;">──────────────────────────────────────</div>
+                  <div>
+                    <div><img src="image/delight08.JPG" style="width: 170px; height: 200px; float: left;" data-action="zoom"></div>
+                    <div style="float:left; width: 410px; height: 200px; margin-left: 5px;">
+                      글ddddd
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">문제해결 및 소감</th>
+                <td>내용이 들어갑니다.</td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        <!-- Project 01 : Deligt 끝 -->
 
-            <hr style="padding: 0; margin: 5px 0 5px 0;">
-            
-            <!-- 개발 환경 소개 -->
-            <div style="padding: 10px 60px 20px 60px; font-weight: 600; font-size: 18px; font-weight: 500; color:rgb(82, 82, 82)">
-              <div style="color: #000;">◽ 개발환경</div>
-              <div style="padding-left: 20px;">JDK11 / Spring Framework / Tomcat 8.5 / Mybatis / JSP / JavaScript / JQuery</div>
-              <div style="color: #000;">◽ 주요기능</div>
-              <div style="padding-left: 20px;">게시글 댓글 CRUD 및 페이징 검색 / 로그인 로그아웃 / 카카오지도 / 마이페이지</div>
-              <div style="color: #000;">◽ 프로젝트 시연 영상</div>
-              <div style="padding-left: 20px;"><a href="https://youtu.be/S-feoKs5or4">https://youtu.be/S-feoKs5or4</a></div>
-              <div style="color: #000;">◽ Github</div>
-              <div style="padding-left: 20px;"><a href="https://github.com/BaeSeokJin/delight">https://github.com/BaeSeokJin/delight</a></div>
-            </div>
+        <br><br><br><br><br>
 
-            <hr style="padding: 0; margin: 5px 0 5px 0;">
-            
-            <!-- 코드 설명 -->
-            <div style="height: 230px; padding: 20px 10px 10px 10px;">
-              <div style="float: left;">
-                <img src="image/delight01.png" style="height: 200px; width: 300px;" data-action="zoom">
-              </div>
-              <div style="float: left; padding-left: 10px;">
-                ddddd <br>
-                dsf
-              </div>
-            </div>
-
-            <hr style="padding: 0; margin: 5px 0 5px 0;">
-
-            <!-- 코드 설명 -->
-            <div style="height: 230px; padding: 20px 10px 10px 10px;">
-              <div style="float: left;">
-                <img src="image/delight01.png" style="height: 200px; width: 300px;" data-action="zoom">
-              </div>
-              <div style="float: left; padding-left: 10px;">
-                ddddd <br>
-                dsf
-              </div>
-            </div>
-
+        <!-- Project 02 : Billida 시작 -->
+        <div style="text-align: center;">
+          <div style="color: #000; font-weight: 700; font-size: 50px;">Billida</div>
+          <div style="color: rgb(155, 155, 155); font-weight: 600; font-size: 18px;">2021.11 ~ 2022.12 (팀 프로젝트 - 5명)</div><br>
+        </div>
+        <div>
+          <div class="visual" style="text-align: center; width: 750px; height: 450px;" >
+            <img src="image/billida01.png" style="height: 450px; width: 600px;"/>
+            <img src="image/billida02.png" style="height: 450px; width: 600px;"/>
+            <img src="image/billida03.png" style="height: 450px; width: 600px;"/>
           </div>
+
+            <table class="type07">
+              <thead>
+              <tr>
+                <th scope="cols" colspan="2">프로젝트 상세설명</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">프로젝트 소개</th>
+                <td>
+                  거리두기 사회가 길어짐에 따라 택배 수요에 맞춰 무인보관함 키오스크를 저렴하게 만들어 보고 싶다는 생각에 시작하게 된 5인 프로젝트입니다.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">주요기능</th>
+                <td>
+                  ◽ 보관함 빌리기 빌려주기 기능<br>
+                  ◽ 보관함 사용 리뷰<br>
+                  ◽ 로그인 및 CURD<br>
+                  ◽ 신고 기능
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">담당 역할</th>
+                <td>
+                  ◽ 신고 기능 : 회원 신고 게시판 CRUD와 검색, 페이징, 회원 권한 회수 기능을 담당하였습니다.<br>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">개발환경</th>
+                <td>
+                  ◽ OS : Windows 10<br>
+                  ◽ Tool : Spring Tool Suite - Eclipse<br>
+                  ◽ DB : Oracle<br>
+                  ◽ Server : Apache Tomcat 8.5 <br>
+                  ◽ Language : JAVA / ANSI SQL / JAVASCRIPT / JSP<br>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">사용툴</th>
+                <td>
+                  ◽ Github : <a href="https://github.com/soeunnnn/finalProject">https://github.com/soeunnnn/finalProject</a><br>
+                  ◽ Oven(초기UI설계) / ERD Cloud(BD설계) / Trello(협업 일정 관리) 
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">문제해결 및 소감</th>
+                <td>내용이 들어갑니다.</td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        <!-- Project 02 : Deligt 끝 -->
+
+        <br><br><br><br><br>
+
+        <!-- Project 03 : bsj-protfolio 시작 -->
         <hr>
+        <div style="text-align: center;">
+          <div style="color: #000; font-weight: 700; font-size: 50px;">BSJ-Protfolio</div>
+          <div style="color: rgb(155, 155, 155); font-weight: 600; font-size: 18px;">2022.02 (개인 프로젝트)</div><br>
+        </div>
+        <div>
+          <div class="visual" style="text-align: center; width: 750px; height: 450px;" >
+            <img src="image/bsj-protfolio.png" style="height: 450px; width: 600px;"/>
+          </div>
+
+            <table class="type07">
+              <thead>
+              <tr>
+                <th scope="cols" colspan="2">프로젝트 상세설명</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">프로젝트 소개</th>
+                <td>
+                  처음에는 지인이 자신의 헤어샵의 사이트를 갖고 싶다는 부탁으로 학원 수료 후 가볍게 제작하게 된 사이트입니다. <br><br>
+                  기본적인 <b>게시글과 댓글의 CRUD</b>와 API 삽입의 공부 삼아 제작하게 되었지만 프로젝트에 애정이 생겨서 <b>Interceptor와 정규표현식</b>을 사용하여 치환에 힘을 주게 되었습니다. <br><br>
+                  또한 실제로 <b>docker를 이용하여 클라우드 서버를 연결하여 배포</b>도 성공적으로 완료하게 되어 마음이 가는 첫 개인 프로젝트입니다. 
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">도메인</th>
+                <td><a href="https://baeseokjin.github.io/bsj-portfolio/">https://baeseokjin.github.io/bsj-portfolio/</a></td>
+              </tr>
+              <tr>
+                <th scope="row">주요기능</th>
+                <td>
+                  ◽ 게시글 댓글 CRUD 및 페이징과 검색<br>
+                  ◽ 로그인 로그아웃<br>
+                  ◽ 카카오지도<br>
+                  ◽ 마이페이지
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">개발환경</th>
+                <td>
+                  ◽ OS : Windows 10<br>
+                  ◽ Tool : Visual Studio Code / Gighub Desktop<br>
+                  ◽ Server : Gighub Page <br>
+                  ◽ Language : HTML5 / CSS3 / JAVASCRIPT <br>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">사용툴</th>
+                <td>
+                  ◽ Github : <a href="https://github.com/BaeSeokJin/delight">https://github.com/BaeSeokJin/delight</a><br>
+                  ◽ Oven(초기UI설계) / ERD Cloud(BD설계) / Trello(협업 일정 관리) 
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">구현기능</th>
+                <td>내용이 들어갑니다.</td>
+              </tr>
+              <tr>
+                <th scope="row">문제해결 및 소감</th>
+                <td>내용이 들어갑니다.</td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        <!-- Project 03 : bsj-protfolio 끝 -->
+
+
         </div>
         <!-- 끝 -->
     </div>
@@ -267,9 +471,9 @@
           <p style="margin-bottom: 20px;">　　　　2021.05 ~ 2021.12</p>
         </div>
         <b>
-          <p style="font-size: 17px;">　　　　　　　　　　　　　● JAVA / JDBC&Servlet / JSP / Spring Framework / Mybatis / Ajax</p>
-          <p style="font-size: 17px;">　　　　　　　　　　　　　● ORACLE</p>
-          <p style="font-size: 17px;">　　　　　　　　　　　　　● HTML / CSS / JavaScript</p>
+          <p style="font-size: 16px;">　　　　　　　　　　　　　● JAVA / JDBC&Servlet / JSP / Spring Framework / Mybatis / Ajax</p>
+          <p style="font-size: 16px;">　　　　　　　　　　　　　● ORACLE</p>
+          <p style="font-size: 16px;">　　　　　　　　　　　　　● HTML / CSS / JavaScript</p>
         </b>
       </div>
 
@@ -281,8 +485,8 @@
           <p style="margin-bottom: 20px;">　　　　2013.03 ~ 2020.08</p>
         </div>
         <b>
-          <p style="font-size: 17px;">　　　　　　　　　　　　　● 2018년 일본학과 학회장 </p>
-          <p style="font-size: 17px;">　　　　　　　　　　　　　● 2019~20년 일본 메지로대학(目白大学) 유학</p>
+          <p style="font-size: 16px;">　　　　　　　　　　　　　● 2018년 일본학과 학회장 </p>
+          <p style="font-size: 16px;">　　　　　　　　　　　　　● 2019~20년 일본 메지로대학(目白大学) 유학</p>
         </b>
       </div>
 
