@@ -1,5 +1,5 @@
 
 $('.visual').slick({
     autoplay: true,
-    autoplaySpeed: 1600
+    autoplaySpeed: 3000
 });
